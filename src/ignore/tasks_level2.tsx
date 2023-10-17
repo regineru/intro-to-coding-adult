@@ -95,8 +95,8 @@ export var tasks_level2 = [
           <br />
           <br />The resoult should be looking somthing like this:<br />
             <Button
-              text="Get GDPR Data" 
-              title="Get GDPR Data"
+              text="Apply" 
+              title="apply"
               variant="secondary"
               icon="chevron_right"
               size="default"

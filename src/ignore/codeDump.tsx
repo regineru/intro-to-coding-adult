@@ -7,7 +7,7 @@ import { Transaction } from "../ignore/Models";
 import { Parameter } from "../code/Task3/Transactions";
 import { detectRiskCountry } from "../code/Task3/TransactionTable";
 import Dashboard from "../code/Task2/Dashboard";
-import GDPR from "../code/Task6/GDPR";
+import Loan from "../code/Task6/Loan";
 
 export function getAllTransactions() {
   const allCustomerTransactions = customer.accounts.flatMap(
@@ -57,11 +57,11 @@ export function TransactionsPage(props: TransactionsPageProps) {
             </div>
           ),
         },{
-          title: "GDPR",
-          key: "GDPR",
+          title: "Loan",
+          key: "Loan",
           content: (
             <div className="TransactionsTab">
-              <GDPR setCurrentSubTab={setCurrentSubTab} />
+              <Loan setCurrentSubTab={setCurrentSubTab} />
             </div>
           ),
         },

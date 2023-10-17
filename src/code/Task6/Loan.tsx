@@ -1,28 +1,33 @@
 import React from "react";
 import { Dropdown, H1, Input, Section, P, H2, Space, Button } from "@dnb/eufemia";
+import loan from "../../ignore/loan.png"
+
 
 export interface TransactionsProps {
     setCurrentSubTab: Function;
 }
 
-export default function GDPR(props: TransactionsProps) {
+export default function Loan(props: TransactionsProps) {
   const { setCurrentSubTab } = props;
-  setCurrentSubTab("GDPR");
+  setCurrentSubTab("Loan");
 
 
 
   return (
     <Section spacing="large" left right style_type="white">
-      <div className="TransactionsTab">
-        <H1>Your privacy in DNB</H1>
+      <div className="loan-container">
+        <H1>Mortgage</H1>
         <Section spacing="large" style_type="white">
-            <H2>Information of how we treat personal sensitive information to comply with General Data Protection Regulation (GDPR)</H2>
+            <H2>Get a mortgage offer and advice throughout your housing journey.</H2>
         </Section>
         <Section spacing="large" style_type="white">
+          <Space space="small">
+            <img src={loan}/>
+          </Space>
             {/* Task 6A: create button */}
             <Button
-              text="Get GDPR Data" 
-              title="Get GDPR Data"
+              text="Apply" 
+              title="apply"
               variant="secondary"
               icon="chevron_right"
               size="default"
