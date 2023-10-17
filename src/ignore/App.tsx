@@ -7,6 +7,7 @@ import TaskNavigator from "./TaskNavigator";
 import { TransactionsPage } from "./codeDump";
 import { tasks_level1 } from "./tasks_level1";
 import { tasks_level2 } from "./tasks_level2";
+import ApplyJob from "../code/TaskX/ApplyJob";
 
 const FlexWrapper = styled.div`
   @media (min-width: 750px) {
@@ -110,6 +111,10 @@ export default function App() {
                 title: "Employee page",
                 key: "Etterforsker",
               },
+              {
+                title: "Positions ",
+                key: "Positions",
+              },
             ]}
             selected_key={currentTab}
           />
@@ -137,6 +142,8 @@ export default function App() {
             return <CustomerPage setCurrentTab={setCurrentTab} />;
           } else if (key == "Etterforsker") {
             return <TransactionsPage setCurrentTab={setCurrentTab} />;
+          }else if (key == "Positions") {
+            return <ApplyJob setCurrentTab={setCurrentTab} />;
           }
         }}
       </Tabs.Content>
