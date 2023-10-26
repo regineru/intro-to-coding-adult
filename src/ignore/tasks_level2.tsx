@@ -60,16 +60,16 @@ export var tasks_level2 = [
     title: "Task 6",
     description: (
       <>
-        <p className="dnb-p">the law says that you can request what companies have of data on you. This is called a subject access request (SAR) and it is part of your right to access your personal data under the General Data Protection Regulation (GDPR).</p>
+        <p className="dnb-p">caseX service are for customer service to review status of cards that have been applied for and block cards that are not filling the requirements.</p>
         <br></br>
         <p className="dnb-p">
           <b>Where on the website?</b>  
-          <i>GDPR</i> under{" "}
+          <i>Loan</i> under{" "}
           <i>Employee page</i>
         </p>
         <p className="dnb-p">
           <b>Where is the code located?</b>{" "}
-          <code className="dnb-code">GDPR.tsx</code> in{" "}
+          <code className="dnb-code">Loan.tsx</code> in{" "}
           <code className="dnb-code">Task6</code>-folder
         </p>
       </>
