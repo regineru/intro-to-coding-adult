@@ -319,19 +319,6 @@ export var tasks_level2 = [
             >
               PaymentCard's Properties
             </Anchor>
-            <FormStatus top state="warn" variant="outlined" stretch={true}>
-              The documentation of the various properties that the PaymentCard
-              has is wrong (
-              <Anchor
-                href="https://eufemia.dnb.no/uilib/extensions/payment-card/properties/"
-                target="_blank"
-              >
-                PaymentCard's Properties
-              </Anchor>
-              ). It says that only{" "}
-              <code className="dnb-code">product_code</code> is required. But{" "}
-              <code className="dnb-code">card_number</code> is also required.
-            </FormStatus>
             <br />
             <br />
             You can adjust the spacing by using{" "}
@@ -414,20 +401,14 @@ export var tasks_level2 = [
             need to wrap the <code className="dnb-code">
               PaymentCard
             </code> and <code className="dnb-code">Switch</code> inside a{" "}
-            <code className="dnb-code">&lt;FlexContainer &gt;</code> (
+            <code className="dnb-code">&lt;Flex.Container &gt;</code> (
             <Anchor
               href="https://eufemia.dnb.no/uilib/layout/flex/container/demos/#horizontal-fieldstring"
               target="_blank"
             >
-              FlexContainer
+              Flex.Container
             </Anchor>
             )
-            <FormStatus
-              top
-              stretch={true}
-              text="Note that FlexContainer is FlexContainer NOT Flex.Container. It is wrong in the documentation"
-              state="warn"
-            />
           </p>
         ),
         hint: (
@@ -437,7 +418,7 @@ export var tasks_level2 = [
               href="https://eufemia.dnb.no/uilib/layout/flex/container/properties/"
               target="_blank"
             >
-              properites of FlexContainer
+              properites of Flex.Container
             </Anchor>{" "}
             to place the components where you want.
           </p>

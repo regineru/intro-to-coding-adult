@@ -28,7 +28,7 @@ export const ApplicationResult = (props: ApplicationResultProps) => {
 
   return (
     <>
-      <Section space left right style_type="white">
+      <Section space left right variant="white">
         <H1>Application</H1>
         {/* Task 7E: Create the the application summary here */}
 

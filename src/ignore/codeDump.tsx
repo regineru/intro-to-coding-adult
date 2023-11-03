@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { allDNBTransactions } from "../data/transactions";
-import { customer } from "../data/customer";
-import { H1, H2, Section, Tabs, NumberFormat } from "@dnb/eufemia";
-import Transactions from "../code/Task3/Transactions";
-import { Transaction } from "../data/Models";
-import { Parameter } from "../code/Task3/Transactions";
-import { detectRiskCountry } from "../code/Task3/TransactionTable";
+import { NumberFormat, Tabs } from "@dnb/eufemia";
+import { useEffect, useState } from "react";
 import Dashboard from "../code/Task2/Dashboard";
+import { detectRiskCountry } from "../code/Task3/TransactionTable";
+import Transactions, { Parameter } from "../code/Task3/Transactions";
 import CardOverview from "../code/Task6/CardOverview";
+import { Transaction } from "../data/Models";
+import { customer } from "../data/customer";
+import { allDNBTransactions } from "../data/transactions";
 
 export function getAllTransactions() {
   const allCustomerTransactions = customer.accounts.flatMap(

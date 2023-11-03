@@ -1,6 +1,5 @@
 import "@dnb/eufemia";
-import { H1, P, Section, Space, Switch } from "@dnb/eufemia";
-import FlexContainer from "@dnb/eufemia/components/flex/Container";
+import { Flex, H1, P, Section, Space, Switch } from "@dnb/eufemia";
 import PaymentCard, { PaymentCardCardStatus } from "@dnb/eufemia/extensions/payment-card";
 import "@dnb/eufemia/extensions/payment-card/style";
 import "@dnb/eufemia/style/themes/theme-ui/extensions";
@@ -19,7 +18,7 @@ export default function CardOverview(props: CardOverviewProps) {
   const [card3, setCard3] = useState<PaymentCardCardStatus>("active");
 
   return (
-    <Section style_type="white">
+    <Section variant="white">
       <H1>Card's of the customer</H1>
       <P>
         Review status of cards, and block those who are not fulfilling the
@@ -30,7 +29,7 @@ export default function CardOverview(props: CardOverviewProps) {
       {/* THE CODE BELOW IS WHAT THEY WILL CODE IN TASK 6, 
       AND IS HERE NOW ONLY TO SHOW WHAT THE ASSIGNMENT IS ABOUT */}
 
-      {/* <FlexContainer align="center">
+      {/* <Flex.Container align="center">
         <PaymentCard
           product_code="VX5"
           card_number="************1923"
@@ -43,11 +42,11 @@ export default function CardOverview(props: CardOverviewProps) {
             else return setCard1("active");
           }}
         />
-      </FlexContainer>
+      </Flex.Container>
 
       <Space top bottom />
 
-      <FlexContainer align="center">
+      <Flex.Container align="center">
         <PaymentCard
           product_code="053"
           card_number="************1923"
@@ -60,10 +59,10 @@ export default function CardOverview(props: CardOverviewProps) {
             else setCard2("active");
           }}
         />
-      </FlexContainer>
+      </Flex.Container>
 
       <Space top bottom />
-      <FlexContainer align="center">
+      <Flex.Container align="center">
         <PaymentCard
           product_code="VL2"
           card_number="************1923"
@@ -76,7 +75,7 @@ export default function CardOverview(props: CardOverviewProps) {
             else setCard3("active");
           }}
         />
-      </FlexContainer> */}
+      </Flex.Container> */}
     </Section>
   );
 }

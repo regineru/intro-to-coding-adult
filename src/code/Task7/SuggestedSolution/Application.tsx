@@ -38,7 +38,7 @@ export const Application = (props: ApplicationProps) => {
     <>
       {!submittedApplication && (
         <div className="ApplicationTab">
-          <Section spacing="large" left right style_type="white">
+          <Section innerSpace="large" left right variant="white">
             <H1 style={{ textAlign: "center" }}>Apply for a job in DNB!</H1>
 
             <P space>

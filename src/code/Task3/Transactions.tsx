@@ -27,12 +27,12 @@ export default function Transactions(props: TransactionsProps) {
   const [inputParameter, setInputParameter] = React.useState(undefined);
 
   return (
-    <Section spacing="small" left right style_type="white">
+    <Section innerSpace="small" left right variant="white">
       <div className="TransactionsTab">
         <H1>Overview of all transactions</H1>
         {/* Task 3A */}
-        <Section style_type="white">
-          <Section spacing>
+        <Section variant="white">
+          <Section innerSpace="small">
             <Dropdown
               data={[
                 Parameter.FROM_NAME,

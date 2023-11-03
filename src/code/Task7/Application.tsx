@@ -16,7 +16,7 @@ export const Application = (props: ApplicationProps) => {
   return (
     <>
       {!submittedApplication && (
-        <Section spacing="large" left right style_type="white">
+        <Section innerSpace="large" left right variant="white">
           <H1 style={{ textAlign: "center" }}>Apply for a job in DNB!</H1>
           {/* Task 7B: Create the application form below this line */}
 

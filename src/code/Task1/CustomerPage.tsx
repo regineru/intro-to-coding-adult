@@ -26,7 +26,7 @@ export default function CustomerPage(props: CustomerPageProps) {
   const [accountClicked, setAccountClicked] = useState("Customer");
 
   return (
-    <Section spacing="small" left right style_type="white">
+    <Section left right variant="white">
       <div className="CustomerTab">
         {accountClicked === "Customer" && (
           <>
@@ -42,7 +42,7 @@ export default function CustomerPage(props: CustomerPageProps) {
               bottom
               top
             />
-            <Section style_type="lavender" spacing>
+            <Section innerSpace="medium" variant="lavender">
               <AccountTable
                 accountList={customer.accounts}
                 setAccountClicked={setAccountClicked}

@@ -23,7 +23,7 @@ export default function AccountPage(props: AccountProps) {
   }
 
   return (
-    <Section spacing top bottom style_type="white">
+    <Section top bottom variant="white">
       <Breadcrumb spacing>
         <Breadcrumb.Item
           text="Accounts"
@@ -40,7 +40,7 @@ export default function AccountPage(props: AccountProps) {
           {findBalance(account.transactions)}
         </NumberFormat>
       </H2>
-      <Section top style_type="lavender" spacing>
+      <Section top variant="lavender" innerSpace="small">
         <TransactionTableForAccounts
           listOfTransactions={account.transactions}
         />
