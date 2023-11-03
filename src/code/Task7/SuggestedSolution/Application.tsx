@@ -3,9 +3,6 @@ import { Field, Form } from "@dnb/eufemia/extensions/forms";
 import { useState } from "react";
 import { ApplicationResult } from "./ApplicationResult";
 
-export interface ApplicationProps {
-  setCurrentTab: Function;
-}
 
 export function isUserInputNull(
   firstName: string,
@@ -23,10 +20,7 @@ export function isUserInputNull(
   }
 }
 
-export const Application = (props: ApplicationProps) => {
-  const { setCurrentTab } = props;
-  setCurrentTab("new_tab");
-
+export const Application = () => {
   const [firstName, setFirstName] = useState(undefined);
   const [lastName, setLastName] = useState(undefined);
   const [motivationLetter, setMotivationLetter] = useState(undefined);

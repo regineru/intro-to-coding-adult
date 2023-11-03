@@ -11,13 +11,13 @@ export type Account = {
 };
 
 export type Transaction = {
-  id: String;
+  id: string;
   from: Person;
   to: Person;
   amount: number;
 };
 
 export type Person = {
-  name: String;
-  country: String;
+  name: string;
+  country: string;
 };

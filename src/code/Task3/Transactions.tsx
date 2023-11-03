@@ -12,14 +12,8 @@ export enum Parameter {
   RISK = 'Risk'
 }
 
-export interface TransactionsProps {
-  setCurrentSubTab: Function;
-}
 
-export default function Transactions(props: TransactionsProps) {
-  const { setCurrentSubTab } = props;
-  setCurrentSubTab("Transaksjoner");
-
+export default function Transactions() {
   const [inputText, setInputText] = React.useState("");
   const handleInputText = (event) => {
     setInputText(event.target.value);

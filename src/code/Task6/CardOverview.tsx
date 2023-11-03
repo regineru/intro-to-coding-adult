@@ -6,14 +6,8 @@ import "@dnb/eufemia/extensions/payment-card/style";
 import "@dnb/eufemia/style/themes/theme-ui/extensions";
 import { useState } from "react";
 
-export interface CardOverviewProps {
-  setCurrentSubTab: Function;
-}
 
-export default function CardOverview(props: CardOverviewProps) {
-  const { setCurrentSubTab } = props;
-  setCurrentSubTab("CardOverview");
-
+export default function CardOverview() {
   const [card1, setCard1] = useState<PaymentCardCardStatus>("active");
   const [card2, setCard2] = useState<PaymentCardCardStatus>("active");
   const [card3, setCard3] = useState<PaymentCardCardStatus>("active");

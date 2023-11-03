@@ -13,14 +13,8 @@ import {
 } from "../../ignore/codeDump";
 import Provider from "@dnb/eufemia/shared/Provider";
 
-export interface DashboardProps {
-  setCurrentSubTab: Function;
-}
 
-export default function Dashboard(props: DashboardProps) {
-  const { setCurrentSubTab } = props;
-  setCurrentSubTab("Dashboard");
-
+export default function Dashboard() {
   return (
     <Provider locale="nb-NO" NumberFormat={{ currency: "NOK" }}>
       <div className="DashboardTab">

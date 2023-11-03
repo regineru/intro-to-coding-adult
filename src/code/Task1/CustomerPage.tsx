@@ -15,14 +15,8 @@ import { H1, H2, Img, Section } from "@dnb/eufemia";
 import "../../ignore/styles.css";
 import AccountPage from "../../ignore/AccountPage";
 
-export interface CustomerPageProps {
-  setCurrentTab: Function;
-}
 
-/** */
-export default function CustomerPage(props: CustomerPageProps) {
-  const { setCurrentTab } = props;
-  setCurrentTab("Kunde");
+export default function CustomerPage() {
   const [accountClicked, setAccountClicked] = useState("Customer");
 
   return (

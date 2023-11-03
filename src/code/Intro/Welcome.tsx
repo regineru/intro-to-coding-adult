@@ -4,13 +4,8 @@ import { Section, H1, H2, P, InfoCard } from "@dnb/eufemia";
 import "../../ignore/styles.css";
 import oslo from "../../ignore/oslo.jpg"
 
-export interface WelcomeProps {
-  setCurrentTab: Function;
-}
 
-export default function Welcome(props: WelcomeProps) {
-  const { setCurrentTab } = props;
-  setCurrentTab("Velkommen");
+export default function Welcome() {
   return (
     <Section spacing="small" left right="0.25" style_type="white">
       <div className="WelcomeTab">

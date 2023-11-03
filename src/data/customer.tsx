@@ -1,4 +1,6 @@
-export var customer = {
+import { Customer } from "./Models";
+
+export var customer: Customer = {
   name: "Kjerstin Braathen",
   accounts: [
     {

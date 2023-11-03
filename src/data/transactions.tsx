@@ -1,4 +1,6 @@
-export var allDNBTransactions = [
+import { Transaction } from "./Models";
+
+export var allDNBTransactions: Transaction[] = [
   {
     id: "900",
     from: {

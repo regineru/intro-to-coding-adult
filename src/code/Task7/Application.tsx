@@ -2,14 +2,8 @@ import { H1, Section } from "@dnb/eufemia";
 import { useState } from "react";
 import { ApplicationResult } from "./ApplicationResult";
 
-export interface ApplicationProps {
-  setCurrentTab: Function;
-}
 
-export const Application = (props: ApplicationProps) => {
-  const { setCurrentTab } = props;
-  setCurrentTab("new_tab");
-
+export const Application = () => {
   // Task 7C: create similar states like the one below
   const [submittedApplication, setSubmittedApplication] = useState(false);
 

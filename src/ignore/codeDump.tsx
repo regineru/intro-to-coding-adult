@@ -1,28 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { allDNBTransactions } from "../data/transactions";
-import { customer } from "../data/customer";
-import { H1, H2, Section, Tabs, NumberFormat } from "@dnb/eufemia";
-import Transactions from "../code/Task3/Transactions";
-import { Transaction } from "../data/Models";
-import { Parameter } from "../code/Task3/Transactions";
-import { detectRiskCountry } from "../code/Task3/TransactionTable";
+import { NumberFormat, Tabs } from "@dnb/eufemia";
+import { useState } from "react";
 import Dashboard from "../code/Task2/Dashboard";
+import { detectRiskCountry } from "../code/Task3/TransactionTable";
+import Transactions, { Parameter } from "../code/Task3/Transactions";
 import CardOverview from "../code/Task6/CardOverview";
+import { Transaction } from "../data/Models";
+import { customer } from "../data/customer";
+import { allDNBTransactions } from "../data/transactions";
 
-export function getAllTransactions() {
-  const allCustomerTransactions = customer.accounts.flatMap(
+export function getAllTransactions(): Transaction[] {
+  const allCustomerTransactions: Transaction[] = customer.accounts.flatMap(
     (account) => account.transactions
   );
   return allDNBTransactions.concat(allCustomerTransactions);
 }
 
-export interface TransactionsPageProps {
-  setCurrentTab: Function;
-}
-
-export function TransactionsPage(props: TransactionsPageProps) {
-  const { setCurrentTab } = props;
-  setCurrentTab("Etterforsker");
+export function TransactionsPage() {
   const [currentSubTab, setCurrentSubTab] = useState<string>(() => {
     if (window.sessionStorage.getItem("currentSubTab") != null) {
       return window.sessionStorage.getItem("currentSubTab");
@@ -30,21 +23,20 @@ export function TransactionsPage(props: TransactionsPageProps) {
     return "Dashboard";
   });
 
-  useEffect(() => {
-    window.sessionStorage.setItem("currentSubTab", currentSubTab.toString());
-  }, [currentSubTab]);
-
   return (
     <Tabs
       left
       selected_key={currentSubTab}
+      on_change={({ selected_key }) => {
+        window.sessionStorage.setItem("currentSubTab", selected_key);
+      }}
       data={[
         {
           title: "Dashboard",
           key: "Dashboard",
           content: (
             <div className="DashboardTab">
-              <Dashboard setCurrentSubTab={setCurrentSubTab} />
+              <Dashboard />
             </div>
           ),
         },
@@ -53,7 +45,7 @@ export function TransactionsPage(props: TransactionsPageProps) {
           key: "Transaksjoner",
           content: (
             <div className="TransactionsTab">
-              <Transactions setCurrentSubTab={setCurrentSubTab} />
+              <Transactions />
             </div>
           ),
         },
@@ -62,12 +54,12 @@ export function TransactionsPage(props: TransactionsPageProps) {
           key: "CardOverview",
           content: (
             <div className="CardOverview">
-              <CardOverview setCurrentSubTab={setCurrentSubTab} />
+              <CardOverview />
             </div>
           ),
         },
       ]}
-    ></Tabs>
+    />
   );
 }
 
@@ -146,21 +138,21 @@ export function sumTransactions() {
 
 export function countCrossBorderTransactions() {
   var innenlandsCounter = 0;
-  getAllTransactions().map((transaction) => {
+  /* getAllTransactions().map((transaction) => {
     if (transaction.from.country === transaction.to.country) {
       innenlandsCounter += 1;
     }
   });
   const utenlandsCounter = getAllTransactions().length - innenlandsCounter;
-  return [innenlandsCounter, utenlandsCounter];
+  return [innenlandsCounter, utenlandsCounter]; */
 }
 
 export function countTargetCountries(country: String) {
   var counter = 0;
-  getAllTransactions().map((transaction) => {
+  /* getAllTransactions().map((transaction) => {
     if (transaction.to.country === country) {
       counter += 1;
     }
-  });
+  }); */
   return counter;
 }
