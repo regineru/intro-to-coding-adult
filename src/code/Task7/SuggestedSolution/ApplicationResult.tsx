@@ -1,6 +1,4 @@
-import { Button, H1, P, Section } from "@dnb/eufemia";
-import FlexContainer from "@dnb/eufemia/components/flex/Container";
-import FlexItem from "@dnb/eufemia/components/flex/Item";
+import { Button, Flex, H1, P, Section } from "@dnb/eufemia";
 import { UploadFile } from "@dnb/eufemia/components/upload/types";
 
 export interface ApplicationResultProps {
@@ -32,34 +30,34 @@ export const ApplicationResult = (props: ApplicationResultProps) => {
     <>
       <Section space left right style_type="white">
         <H1>Application</H1>
-        <FlexContainer>
-          <FlexItem size={2}>
+        <Flex.Container>
+          <Flex.Item size={2}>
             <P>Firstname:</P>
-          </FlexItem>
-          <FlexItem size={10}>{firstName}</FlexItem>
+          </Flex.Item>
+          <Flex.Item size={10}>{firstName}</Flex.Item>
 
-          <FlexItem size={2}>
+          <Flex.Item size={2}>
             <P>Lastname: </P>
-          </FlexItem>
-          <FlexItem size={10}>{lastName}</FlexItem>
+          </Flex.Item>
+          <Flex.Item size={10}>{lastName}</Flex.Item>
 
-          <FlexItem size={2}>
+          <Flex.Item size={2}>
             <P>Reason letter: </P>
-          </FlexItem>
-          <FlexItem size={10}>{motivationLetter}</FlexItem>
+          </Flex.Item>
+          <Flex.Item size={10}>{motivationLetter}</Flex.Item>
 
-          <FlexItem size={2}>
+          <Flex.Item size={2}>
             <P>Files: </P>
-          </FlexItem>
-          <FlexItem size={10}>
+          </Flex.Item>
+          <Flex.Item size={10}>
             {files.map((f) => (
               <P>{f.file.name}</P>
             ))}
-          </FlexItem>
-        </FlexContainer>
+          </Flex.Item>
+        </Flex.Container>
 
-        <FlexContainer top>
-          <FlexItem>
+        <Flex.Container top>
+          <Flex.Item>
             <Button
               variant="secondary"
               onClick={() => {
@@ -68,8 +66,8 @@ export const ApplicationResult = (props: ApplicationResultProps) => {
             >
               Back
             </Button>
-          </FlexItem>
-          <FlexItem>
+          </Flex.Item>
+          <Flex.Item>
             <Button
               variant="primary"
               onClick={() => {
@@ -82,8 +80,8 @@ export const ApplicationResult = (props: ApplicationResultProps) => {
             >
               Send application to DNB
             </Button>
-          </FlexItem>
-        </FlexContainer>
+          </Flex.Item>
+        </Flex.Container>
       </Section>
     </>
   );

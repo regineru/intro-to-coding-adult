@@ -1,4 +1,4 @@
-import { Anchor, FormStatus, P, Ul, Tooltip } from "@dnb/eufemia";
+import { Anchor, FormStatus, P, Tooltip, Ul } from "@dnb/eufemia";
 
 export var tasks_level2 = [
   {
@@ -173,8 +173,8 @@ export var tasks_level2 = [
             model.
             <br />
             <br />
-            Complete the three steps and verify your changes in the
-            frontend table you have created.
+            Complete the three steps and verify your changes in the frontend
+            table you have created.
           </p>
         ),
         hint: (
@@ -555,21 +555,17 @@ export var tasks_level2 = [
               href="https://eufemia.dnb.no/uilib/layout/flex/container/"
               target="_blank"
             >
-              FlexContainer
+              Flex.Container
             </Anchor>{" "}
             and{" "}
             <Anchor
               href="https://eufemia.dnb.no/uilib/layout/flex/item/"
               target="_blank"
             >
-              FlexItem
+              Flex.Item
             </Anchor>
-            <FormStatus
-              top
-              stretch={true}
-              text="Note that FlexContainer is FlexContainer NOT Flex.Container, and FlexItem is FlexItem NOT Flex.Item. It is wrong in the documentation"
-              state="warn"
-            />
+            <br />
+            <br />
             Use the input values to fill the content of this page.
           </p>
         ),
@@ -586,15 +582,15 @@ export var tasks_level2 = [
               Reference image for application summary
             </Anchor>{" "}
             you can adjust the <code className="dnb-code">size</code> of the{" "}
-            <code className="dnb-code">FlexItem</code>. One row on a page
+            <code className="dnb-code">Flex.Item</code>. One row on a page
             consist of 12 units, which means that if the size of one{" "}
-            <code className="dnb-code">FlexItem</code> is 2 like so:{" "}
+            <code className="dnb-code">Flex.Item</code> is 2 like so:{" "}
             <code className="dnb-code">
-              &lt;FlexItem size=&#123;2&#125;&gt;
+              &lt;Flex.Item size=&#123;2&#125;&gt;
             </code>{" "}
             and another one is 12 like so:
             <code className="dnb-code">
-              &lt;FlexItem size=&#123;12&#125;&gt;
+              &lt;Flex.Item size=&#123;12&#125;&gt;
             </code>{" "}
             they will make up one row on the page.
             <br />
