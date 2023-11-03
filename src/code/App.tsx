@@ -7,7 +7,7 @@ import { tasks_level1 } from "../ignore/tasks_level1";
 import { tasks_level2 } from "../ignore/tasks_level2";
 import Welcome from "./Intro/Welcome";
 import CustomerPage from "./Task1/CustomerPage";
-import { Application } from "./Task7/SuggestedSolution/Application";
+import { Application } from "./Task7/Application";
 
 const FlexWrapper = styled.div`
   @media (min-width: 750px) {
