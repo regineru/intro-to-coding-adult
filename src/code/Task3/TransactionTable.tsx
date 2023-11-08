@@ -7,7 +7,7 @@ export type TransactionTableProps = {
   listOfTransactions: CompanyTransaction[];
 };
 
-/** Task 3C */
+/* Task 3C */
 export function detectRiskCompany(company: String): String | undefined {
 
   if (company === "placeholder" ){
@@ -17,7 +17,7 @@ export function detectRiskCompany(company: String): String | undefined {
   }
 }
 
-/** Task 3D */
+/* Task 3D */
 function setColorForHighRisk(risk: String): any {
   return "black";
 }
