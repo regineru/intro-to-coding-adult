@@ -25,7 +25,7 @@ export var tasks_level2 = [
         <code className="dnb-code">CardOverview.tsx</code> in{" "}
         <code className="dnb-code">Task4</code>-folder
         <FormStatus top state="info" variant="outlined" stretch={true}>
-          If you want help we have a suggested solution in the
+          If you want help, we have a suggested solution in the
           <code className="dnb-code">Task4/SuggestedSolution</code>-folder you
           can look at.
         </FormStatus>
@@ -70,7 +70,7 @@ export var tasks_level2 = [
                 >
                   Section
                 </Anchor>
-                , which is used to get correct styling
+                , used to get correct styling
               </Li>
               <Li>
                 <Anchor
@@ -79,7 +79,7 @@ export var tasks_level2 = [
                 >
                   H1
                 </Anchor>
-                , which is used to create the title
+                , used to create the title
               </Li>
               <Li>
                 <Anchor
@@ -88,10 +88,10 @@ export var tasks_level2 = [
                 >
                   P
                 </Anchor>
-                , which is used to create a paragraph with explanatory text.
+                , used to create a paragraph with explanatory text.
               </Li>
             </Ul>
-            As you see, the page do not have any cards yet. You can start of by
+            As you see, the page does not have any cards yet. You can start of by
             adding one card to the page. <br />
             Add the Eufemia component{" "}
             <Anchor
@@ -104,12 +104,12 @@ export var tasks_level2 = [
             still inside the <code className="dnb-code">&lt;Section&gt;</code>{" "}
             component.
             <FormStatus top state="info" variant="outlined" stretch={true}>
-              Remember when you create a component like so{" "}
+              Remember that when you create a component like so{" "}
               <code className="dnb-code">&lt;P&gt;</code> you also need to{" "}
               <i>close</i> that component with{" "}
               <code className="dnb-code">&lt;/P&gt;</code>
               <br />
-              You can also write it on the shortform like so:{" "}
+              You can also write it in shortform like this:{" "}
               <code className="dnb-code">&lt;P /&gt;</code>
             </FormStatus>
           </p>
@@ -124,7 +124,7 @@ export var tasks_level2 = [
             </code>
             <br />
             Properties are values that the component needs, that you send with
-            it when you create it. PaymentCard has two requires properties{" "}
+            it when you create it. <code className="dnb-code">PaymentCard</code> has two required properties{" "}
             <code className="dnb-code">product_code</code> and{" "}
             <code className="dnb-code">card_number</code> that you need to send
             to it when you create it. It also has numerous optional properties .
@@ -153,7 +153,7 @@ export var tasks_level2 = [
         level: "EASY",
         description: (
           <p className="dnb-p">
-            Add two more <code className="dnb-code">PaymentCard</code>'s, and
+            Add two more <code className="dnb-code">PaymentCard</code>'s and
             play around with the different card types available:{" "}
             <Anchor
               href="https://eufemia.dnb.no/uilib/extensions/payment-card/products/"
@@ -228,7 +228,7 @@ export var tasks_level2 = [
             <FormStatus
               top
               stretch={true}
-              text="Note that FlexContainer is FlexContainer NOT Flex.Container. It is wrong in the documentation"
+              text="Note that FlexContainer is FlexContainer NOT Flex.Container. This is wrong in the documentation"
               state="warn"
             />
           </p>
@@ -252,14 +252,14 @@ export var tasks_level2 = [
         level: "HARD",
         description: (
           <p className="dnb-p">
-            As you may have noticed, the button doesn't actually change
+            As you may have noticed, the button does not actually change
             anything. For this we need to implement some logic to the button, so
             that when the button is pressed it will change the
             <code className="dnb-code">card_status</code> of the card to{" "}
             <i>blocked</i>.
             <br />
             <br />
-            Let's start with the card at the top, and implement logic to the
+            Let us start with the card at the top, and implement logic to the
             button next to it. <br />
             You need to do two things for this to work:
             <Ol>
@@ -285,17 +285,17 @@ export var tasks_level2 = [
             <code className="dnb-code">CardOverview.tsx</code>.
             <br />
             <br />
-            First we need to use the state (ref. nr. 1 above). This is done
+            First, we need to use the state (ref. nr. 1 above). This is done
             setting the property <code className="dnb-code">
               card_status
             </code>{" "}
-            in <code className="dnb-code">PaymentCard</code> to the state. Let's
+            in <code className="dnb-code">PaymentCard</code> to the state. Let us
             use the first state for the first card. <br />
             <br /> Second (ref. nr. 2 above), we need to change this state when
             the button is pressed. This is done by using the{" "}
             <code className="dnb-code">on_change</code> property in{" "}
-            <code className="dnb-code">Switch</code>, and use the function to
-            set the state to a new value, which is in our case would be{" "}
+            <code className="dnb-code">Switch</code>. Use the function to
+            set the state to a new value, which in our case would be{" "}
             <code className="dnb-code">"blocked"</code>. See the documentation
             for how to do this:{" "}
             <Anchor
@@ -307,7 +307,7 @@ export var tasks_level2 = [
             <br />
             <br />
             Remember to also change back the state to{" "}
-            <code className="dnb-code">"active"</code> when the user press the
+            <code className="dnb-code">"active"</code> when the user presses the
             button again.
             <br />
             <br />
@@ -396,8 +396,8 @@ export var tasks_level2 = [
         ),
         hint: (
           <p className="dnb-p">
-            To access an item in a list at a certain index write var item =
-            list[index]
+            To access an item in a list at a certain index write var <code className="dnb-code">item =
+            list[index]</code>.
           </p>
         ),
       },
@@ -405,7 +405,11 @@ export var tasks_level2 = [
         id: 0,
         name: "Part B",
         level: "MEDIUM",
-        description: <p className="dnb-p">Now that we have implemented a sorting algorithm which hopefully works, we can use it in our webpage. In the file AccountPage.tsx, we outline how the account page will look. In line 73, we see the list of transactions. To sort this list with Bubble Sort, use the function BubbleSort() with parameters transactionList and category which we are sorting. </p>,
+        description: <p className="dnb-p">Now that we have implemented a sorting algorithm which hopefully works, 
+        we can use it in our webpage. In the file <code className="dnb-code">AccountPage.tsx</code>, we outline 
+        how the account page will look. On line 67, we see the list of transactions. To sort this list with Bubble Sort, 
+        use the function <code className="dnb-code">BubbleSort()</code> with the parameters <code className="dnb-code">transactionList</code> 
+        and <code className="dnb-code">category</code> which we are sorting. </p>,
         hint: <p className="dnb-p">Note that the parameters have to be used in the order defined in the first line of the sorting function.</p>,
       },
     ],
@@ -422,15 +426,15 @@ export var tasks_level2 = [
             An organized collection of structured information, or data,
             typically stored electronically in a computer system.
           </Tooltip>{" "}
-          as a source of data that is exposed on the web page.
+          which contains the data that is exposed on the web page.
           <br />
           <br />
-          The
-          <code className="dnb-code">data</code> folder holds several files that
-          contain data for the online bank, thus serving like the database in
-          this system. There you can see, for example, the list of accounts and
-          the associated transactions on the Customer page. Try to identify
-          these three components in the code:
+          Inside the
+          <code className="dnb-code">data</code> folder we have a couple of 
+          files that contain the data for our online bank. These files act like the 
+          database of our application. In these files you can, for instance, see 
+          the list of accounts and their associated transactions from the <i>Customer page</i>. Try to identify
+          these three parts in the code:
           <Ul>
             <li>
               The file
@@ -452,8 +456,7 @@ export var tasks_level2 = [
               the data in these files.
             </li>
           </Ul>
-          You will have to remember these three aspects of data storage and
-          visualization to complete the parts of this task.
+          These three aspects of data storage and visualisation will be used to complete the parts of this task.
         </p>
         <br />
         <p className="dnb-p">
@@ -477,12 +480,12 @@ export var tasks_level2 = [
             <br />
             <br />
             Make sure the new account is displayed in the table when you are
-            finished, and pay attention to the accounts' and transactions' ID's.
+            finished and pay attention to the accounts' and transactions' ID's.
           </p>
         ),
         hint: (
           <p className="dnb-p">
-            After the closing tag for the ID 3 account named BSU, add a similar
+            After the closing tag for the <code className="dnb-code">id: 3</code> account named <i>BSU</i>, add a similar
             object with the same structure and new data. This account follows
             the Account model that is already defined. The new data will be
             listed in the table automatically because the current code lists all
@@ -503,7 +506,7 @@ export var tasks_level2 = [
             <br />
             <br />
             At this point, the owner is not even included in the database model,
-            so displaying it in the table is not possible. Therefore you have to
+            so displaying it in the table is not possible. Therefore, you have to
             make changes in all the three logical steps listed above. That
             means:
             <Ul>
@@ -515,13 +518,13 @@ export var tasks_level2 = [
               </li>
             </Ul>
             Complete the three steps and choose yourself who is the owner of
-            each account - the customer themself or a partner or parent for
+            each account - the customer themself, a partner, or a parent for
             instance.
           </p>
         ),
         hint: (
           <p className="dnb-p">
-            Code needs to be added in three different files;{" "}
+            Code needs to be added in three different files:{" "}
             <code className="dnb-code">CustomerModel.tsx</code>,{" "}
             <code className="dnb-code">customer.tsx</code> and{" "}
             <code className="dnb-code">AccountTable.tsx</code>. Look at the
@@ -585,7 +588,7 @@ export var tasks_level2 = [
           <br />
           <br />
           To be able to apply for a job, you first need to create a new page and
-          create an application form. To create the page you will use{" "}
+          create an application form. To create the page, you will use{" "}
           <Anchor
             href="https://eufemia.dnb.no/uilib/components/"
             target="_blank"
@@ -595,9 +598,7 @@ export var tasks_level2 = [
           and add functionality to them.
           <br />
           <br />
-          This task is build up on two reference images, and you trying to
-          create that. But feel free to create your own design and
-          functionality.
+          This task is built up of two reference images, and you may try to recreate them, or create your own design and functionality
         </p>
         <br></br>
         <p className="dnb-p">
@@ -638,7 +639,7 @@ export var tasks_level2 = [
             line 108 you can see we have three different elements, each
             representing one tab.
             <br />
-            You need to add a forth element here, where the title is{" "}
+            You need to add a fourth element here, where the title is{" "}
             <b>Apply for a job</b> and the key is{" "}
             <code className="dnb-code">new_tab</code>.
             <br />
@@ -657,7 +658,7 @@ export var tasks_level2 = [
           <P>
             You need to add a new <code className="dnb-code">else if</code>{" "}
             clause that checks for the key that the new tab has. Then you need
-            to return a new page similar what has been done to the other pages
+            to return a new page similar to what has been done to the other pages
             right above.
           </P>
         ),
@@ -743,9 +744,9 @@ export var tasks_level2 = [
         hint: (
           <>
             This is a quite open task where you are supposed to use different UI
-            components. Try to use the one listed in the assignment, and use the
+            components. Try to use the ones listed in the assignment and use the
             documentation actively to see the possibility in each component and
-            what customization you can do.
+            what customisation you can do.
             <br />
             For insance, the{" "}
             <Anchor
@@ -879,7 +880,7 @@ export var tasks_level2 = [
             </Anchor>
             .
             <br />
-            To create this page you can use some layout components to make it
+            To create this page, you can use some layout components to make it
             look similar to the reference image:
             <br />
             <Anchor
@@ -915,7 +916,7 @@ export var tasks_level2 = [
             To create a layout similar to the{" "}
             <Anchor href="/reference_image_application_result" target="_blank">
               Reference image for application summary
-            </Anchor>{" "}
+            </Anchor>,{" "}
             you can adjust the <code className="dnb-code">size</code> of the{" "}
             <code className="dnb-code">FlexItem</code>. One row on a page
             consist of 12 units, which means that if the size of one{" "}
@@ -967,7 +968,7 @@ export var tasks_level2 = [
             <code className="dnb-code">false</code>.
             <br />
             <br />
-            To reset all the input fields you need to set all the states you
+            To reset all the input fields, you need to set all the states you
             created in Part C to <code className="dnb-code">undefined</code> for
             the text fields and <code className="dnb-code">[]</code> for the
             file state.
