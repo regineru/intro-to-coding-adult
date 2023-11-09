@@ -11,10 +11,7 @@ import Dashboard from "../code/Task2/Dashboard";
 import CardOverview from "../code/Task4/CardOverview";
 
 export function getAllTransactions() {
-  //const allCustomerTransactions = customer.accounts.flatMap(
-  //  (account) => account.transactions
-  //);
-  return allDNBTransactions; //.concat(allCustomerTransactions);
+  return allDNBTransactions; 
 }
 
 export function TransactionsPage() {

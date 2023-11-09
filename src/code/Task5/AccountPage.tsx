@@ -4,15 +4,10 @@ import { Account, Transaction } from "../../data/CustomerModel";
 import { TransactionTableForAccounts } from "../../ignore/TransactionTableForAccounts";
 import { BubbleSort } from "./SortingAlgorithm";
 
-
-
-
 export type AccountProps = {
   account: Account | undefined;
   setAccountClicked: Function;
 };
-
-
 
 export enum CategoryEnum {
   DESCRIPTION = "Description",

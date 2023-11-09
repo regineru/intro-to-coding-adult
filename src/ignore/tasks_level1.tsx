@@ -278,7 +278,7 @@ export var tasks_level1 = [
     description: (
       <>
         Someone has transferred money to Evil Corp! In this task we will try to
-        figure out who transferred money this corporation.
+        figure out who transferred the money.
         <br />
         <br />
         <b>Where on the website?</b> <i>Transactions</i> under{" "}
@@ -347,7 +347,7 @@ export var tasks_level1 = [
             <br />
             <br />
             Changes need to be made two different places in the code, as you
-            want both the title and the content of the table to change. Double
+            want both the <i>title</i> and the <i>content</i> of the table to change. Double
             check to see that the correct content can be found under the correct
             title.
           </>
