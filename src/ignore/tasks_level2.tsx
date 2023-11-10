@@ -190,7 +190,8 @@ export var tasks_level2 = [
             You can try to make the payment cards look similar to this:{" "}
             <Anchor href="/reference_image_card_overview" target="_blank">
               Reference image for <i>Customer's Cards</i> page
-            </Anchor>.
+            </Anchor>
+            .
           </>
         ),
       },
@@ -233,6 +234,7 @@ export var tasks_level2 = [
               stretch={true}
               text="Note that FlexContainer is FlexContainer NOT Flex.Container. This is wrong in the documentation"
               state="warn"
+              variant="outlined"
             />
           </>
         ),
@@ -660,11 +662,9 @@ export var tasks_level2 = [
             To also add content to the tab you need to add a new{" "}
             <code className="dnb-code">else if</code> check in the{" "}
             <code className="dnb-code">Tabs.Content</code> section (on approx.
-            line 145) where you check against the key{" "}
+            line 150) where you check against the key{" "}
             <code className="dnb-code">new_tab</code>. The page to return is{" "}
-            <code className="dnb-code">
-              &lt;Application setCurrentTab=&#123;setCurrentTab&#125;/&gt;
-            </code>
+            <code className="dnb-code">&lt;Application /&gt;</code>
           </>
         ),
         hint: (
@@ -874,8 +874,9 @@ export var tasks_level2 = [
             <br />
             Also ensure that you switch out all the{" "}
             <code className="dnb-code">undefined</code> values when
-            <code className="dnb-code">ApplicationResult</code> is called in <code className="dnb-code">Application.tsx</code> to the
-            actual values.
+            <code className="dnb-code">ApplicationResult</code> is called in{" "}
+            <code className="dnb-code">Application.tsx</code> to the actual
+            values.
           </>
         ),
       },
@@ -914,6 +915,7 @@ export var tasks_level2 = [
               stretch={true}
               text="Note that FlexContainer is FlexContainer NOT Flex.Container, and FlexItem is FlexItem NOT Flex.Item. It is wrong in the documentation"
               state="warn"
+              variant="outlined"
             />
             Use the input values to fill the content of this page.
           </>
@@ -961,7 +963,10 @@ export var tasks_level2 = [
             .
             <br />
             Use the{" "}
-            <Anchor href="primary" target="_blank">
+            <Anchor
+              href="https://eufemia.dnb.no/uilib/components/button/demos/"
+              target="_blank"
+            >
               Button
             </Anchor>{" "}
             component and create one secondary button (<b>Back</b>) and one

@@ -119,6 +119,7 @@ export default function App() {
                 key: "Etterforsker",
               },
               /* Task 7A: Add tab data here */
+              
             ]}
             selected_key={currentTab}
             on_change={({ selected_key }) => {
@@ -153,6 +154,7 @@ export default function App() {
             return <TransactionsPage />;
           }
           /* Task 7A: Add tab content here */
+          
         }}
       </Tabs.Content>
     </>
