@@ -135,7 +135,7 @@ export var tasks_level1 = [
             <code className="dnb-code">
               &lt;H1&gt;Welcome unknown user!&lt;/H1&gt;
             </code>{" "}
-            in line 34 and change <b>unknown</b> with a name you choose
+            in line 27 and change <b>unknown</b> with a name you choose
             yourself.
           </>
         ),
@@ -155,7 +155,7 @@ export var tasks_level1 = [
             code by changing the word <code className="dnb-code">
               unknown
             </code>{" "}
-            on line 37 to the name of the picture you chose. <br />
+            on line 30 to the name of the picture you chose. <br />
             <br />
             <i>
               Remember to spell it exactly like the name of the picture (pay
@@ -165,7 +165,7 @@ export var tasks_level1 = [
         ),
         hint: (
           <>
-            On code line 37 you have to switch out{" "}
+            On code line 30 you have to switch out{" "}
             <code className="dnb-code">src=&#123;unknown&#125;</code> with for
             instance{" "}
             <code className="dnb-code">src=&#123;TaylorSwift&#125;</code>
@@ -207,7 +207,7 @@ export var tasks_level1 = [
         ),
         hint: (
           <>
-            Find code line 28 that says{" "}
+            Find code line 21 that says{" "}
             <code className="dnb-code">
               &lt;H1 style=&#123;&#123; fontSize: "small"
               &#125;&#125;&gt;Dashboard&lt;/H1&gt;
@@ -236,11 +236,11 @@ export var tasks_level1 = [
         ),
         hint: (
           <>
-            On code line 96 you will find a{" "}
+            On code line 84 you will find a{" "}
             <code className="dnb-code">label</code>
             for the pie chart that looks like this:{" "}
             <code className="dnb-code">label: "Amount"</code>. <br />
-            Do you find the same for the column diagram on line 70?
+            Do you find the same for the column diagram on line 64?
           </>
         ),
       },
@@ -260,7 +260,7 @@ export var tasks_level1 = [
         ),
         hint: (
           <>
-            The same way that is done on code line 66 and 72-76 for all the
+            The same way that is done on code line 60 and 66-71 for all the
             other companies, we have to add both a new{" "}
             <code className="dnb-code">labels</code> and new{" "}
             <code className="dnb-code">data</code>.
@@ -319,7 +319,7 @@ export var tasks_level1 = [
         hint: (
           <>
             Here you first have to find the title in the code. See if you can
-            can find the title on line 32. Add a new line under the element
+            can find the title on line 25. Add a new line under the element
             <code className="dnb-code">&lt;P&gt; your text &lt;/P&gt;</code> og
             and fill inn the text between the
             <code className="dnb-code">&lt;P&gt;</code>'s.
@@ -401,7 +401,7 @@ export var tasks_level1 = [
         hint: (
           <>
             You first have to switch out{" "}
-            <code className="dnb-code">company</code> with{" "}
+            <code className="dnb-code">placeholder</code> with{" "}
             <code className="dnb-code">Evil Corp</code>. Further you have to
             decide when to return <b>"HIGH"</b>
             and when to return <b>"LOW"</b> for it to be logically correct. It
@@ -514,7 +514,7 @@ export var tasks_level1 = [
             <b>Recipient's company</b>. Find the{" "}
             <code className="dnb-code">Dropdown</code> component and add data to
             it. Have a look at <code className="dnb-code">Parameter</code> on
-            line 38-42 and see if you can find the missing one and add it to the
+            line 31-35 and see if you can find the missing one and add it to the
             drop-down menu.
           </>
         ),
