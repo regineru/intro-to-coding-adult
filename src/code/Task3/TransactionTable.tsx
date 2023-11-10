@@ -37,7 +37,7 @@ export const TransactionTable = (props: TransactionTableProps) => {
           <thead>
             <Tr>
               <Th>Sender's name</Th>
-              <Th>Sender's Company</Th>
+              <Th>Sender's company</Th>
               <Th>Recipient's name</Th>
               {/* Task 3B  */}
               <Th>Amount</Th>
