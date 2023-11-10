@@ -7,10 +7,10 @@ export var tasks_level2 = [
     description: (
       <>
         Customer service in DNB work long hours to help our customers the best
-        they can. When they see suspicious transactions on their account, they
-        call us in the hope to find out what has happened, and to block the
-        cards linked to the account. To be able to do this, customer service has
-        to see all the cards of a customer.
+        they can. When customers suspect fraud, they call us in the hope to find
+        out what has happened, and to block the cards linked to the account. To
+        be able to do this, customer service has to see all the cards of a
+        customer.
         <br />
         <br />
         In this assignment, you will be creating such a page where the customer
@@ -187,10 +187,10 @@ export var tasks_level2 = [
             to customize the cards the way you want.
             <br />
             <br />
-            You can try to make the page look similar to this:{" "}
+            You can try to make the payment cards look similar to this:{" "}
             <Anchor href="/reference_image_card_overview" target="_blank">
               Reference image for <i>Customer's Cards</i> page
-            </Anchor>
+            </Anchor>.
           </>
         ),
       },
@@ -244,9 +244,11 @@ export var tasks_level2 = [
               href="https://eufemia.dnb.no/uilib/layout/flex/container/properties/"
               target="_blank"
             >
-              properites of FlexContainer
+              properties of FlexContainer
             </Anchor>{" "}
-            to place the components where you want.
+            to place the components where you want. For example you can use{" "}
+            <code className="dnb-code">align=&#123;center&#125;</code> to center
+            the content.
           </>
         ),
       },
@@ -285,7 +287,7 @@ export var tasks_level2 = [
             >
               React's useState
             </Anchor>{" "}
-            which you can see we have done three time on line 17, 18 and 19 in{" "}
+            which you can see we have done three times on line 12, 13 and 14 in{" "}
             <code className="dnb-code">CardOverview.tsx</code>.
             <br />
             <br />
@@ -327,7 +329,10 @@ export var tasks_level2 = [
             <code className="dnb-code">on_change</code> and check if the card is{" "}
             <code className="dnb-code">checked</code> or not. If it is checked,
             set the card status to <code className="dnb-code">"blocked"</code>,
-            else set it to <code className="dnb-code">"active"</code>.
+            else set it to <code className="dnb-code">"active"</code>. Remember
+            to use the variable{" "}
+            <code className="dnb-code">&#123;card&#125;</code> to access the
+            state value.
           </>
         ),
       },
@@ -338,8 +343,8 @@ export var tasks_level2 = [
     title: "Task 5",
     description: (
       <>
-        This task covers algorithms. In the table which shows the transactions
-        for a specific account, we see a list of transactions that can be
+        This task covers algorithms. If you click on one of the accounts in{" "}
+        <i>Customer Page</i>, the table shows a list of transactions that can be
         sorted. <br />
         <br />
         Currently, clicking on the <i>sort by</i> dropdown does nothing to the
@@ -362,12 +367,13 @@ export var tasks_level2 = [
           </li>
         </ol>
         To get a better understanding of the algorithm watch{" "}
-        <a
+        <Anchor
           href="https://youtu.be/Iv3vgjM8Pv4?feature=shared&t=52"
           target="_blank"
         >
-          this video
-        </a>
+          this video (or search youtube for Bubble sort with Hungarian, folk
+          dance)
+        </Anchor>
         .<br />
         <br />
         <b>Where on the website?</b> Click on one of the accounts in{" "}
@@ -382,24 +388,33 @@ export var tasks_level2 = [
       {
         id: 4,
         name: "Part A",
-        level: "HARD",
+        level: "PROFESSIONAL",
         description: (
           <>
             In <code className="dnb-code">SortingAlgorithm.tsx</code>, implement
             the Bubble sort algorithm using the comments in the code as a guide.
+            Look at the example implemented in
+            <Anchor
+              href="https://blog.exploringserverless.com/sorting-algorithms-implemented-in-typescript"
+              target="_blank"
+            >
+              {" "}
+              this example
+            </Anchor>{" "}
+            for further guidance on Bubble sort.
           </>
         ),
         hint: (
           <>
-            To access an item in a list at a certain index write var{" "}
-            <code className="dnb-code">item = list[index]</code>.
+            To access an item in a list at a certain index write{" "}
+            <code className="dnb-code">var item = list[index]</code>.
           </>
         ),
       },
       {
         id: 5,
         name: "Part B",
-        level: "MEDIUM",
+        level: "HARD",
         description: (
           <>
             Now that we have implemented a sorting algorithm which hopefully
@@ -414,8 +429,8 @@ export var tasks_level2 = [
         ),
         hint: (
           <>
-            Note that the parameters have to be used in the order defined in the
-            first line of the sorting function.
+            Make use of the Bubble Sort algorithm you implemented in the
+            TransactionTableForAccounts.
           </>
         ),
       },
@@ -453,7 +468,7 @@ export var tasks_level2 = [
             The file <code className="dnb-code">customer.tsx</code> under{" "}
             <code className="dnb-code">data</code> contains the actual data. You
             see that it is structured according to the data models, where each
-            customer has a name and a list of transactions for example.
+            customer has a name and a list of accounts.
           </li>
           <li>
             The <i>Accounts</i> table on the <i>Customer page</i>, found in{" "}
@@ -545,7 +560,7 @@ export var tasks_level2 = [
         level: "PROFESSIONAL",
         description: (
           <>
-            Now the product owner wants to lanch a new feature; a customer
+            Now the product owner wants to launch a new feature; a customer
             should be able to see all the funds they own in the online bank. The
             funds should be listed in a new table under the accounts table in a
             similar design (or another if you want).
@@ -565,7 +580,9 @@ export var tasks_level2 = [
             <br />
             <br />
             Complete the three steps and verify your changes in the frontend
-            table you have created.
+            table you have created. Pay attention to the imports at the top of
+            the file, and to how the account data is imported, to make sure you
+            get the new data in the table.
           </>
         ),
         hint: (
@@ -856,7 +873,7 @@ export var tasks_level2 = [
             <br />
             Also ensure that you switch out all the{" "}
             <code className="dnb-code">undefined</code> values when
-            <code className="dnb-code">ApplicationResult</code> is called to the
+            <code className="dnb-code">ApplicationResult</code> is called in <code className="dnb-code">Application.tsx</code> to the
             actual values.
           </>
         ),
